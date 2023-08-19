@@ -1,0 +1,116 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    transition: background-image 0.5s;  /* 선택적: 배경 전환 효과 */
+    background-size: cover;  /* 배경 이미지가 화면 크기에 맞게 조정되면서, 이미지의 일부가 잘릴 수 있습니다. */
+    background-repeat: no-repeat;  /* 이미지 반복 방지 */
+    background-position: center;  /* 이미지를 화면 중앙에 위치시킴 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#center-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 41px;
+    
+}
+
+#kiminonawa {
+    padding: 5px 0;
+    font-size: 1.2rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 41px;
+    box-sizing: border-box;    /* padding과 border를 너비와 높이에 포함 */
+    width: 7ch;           
+    color:white;
+}
+
+#clock {
+    position: absolute;
+    top: 0.1px;
+    right: 30px;
+    font-size: 3rem;
+}
+
+#toDo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size:x-large;
+    color: white;
+}
+
+#todo-container {
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    background-color: rgba(0,0,0,0.99);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#todo-form input {
+    background-color: white;
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+    outline: none;
+    border-radius: 3px; /* 둥근 테두리 */
+    border: none;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#todo-list button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#todo-list button:hover {
+    background-color: darkred;
+}
+
+#Add {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+#weather {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: larger;
+}
